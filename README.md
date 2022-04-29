@@ -22,7 +22,8 @@ $`Loss_{val} \approx 2.40;  \;\; Loss_{train} \approx 2.23`$
 <img src="images/model.png" style="width:50%">
 
 ## Dataset
-I used MSCOCO dataset with 118287 images, and five captions for every image to train model.
+I used MSCOCO dataset with 118287 images, and five captions for every image to train model.  
+Github limites file size, so dataset can be downloaded  <a href="https://disk.yandex.ru/d/LF8aFb7I69-7vg">from here.</a>  
 
 ## Project structure
 1. `week6_final_project.ipynb` - notebook with model training code.
