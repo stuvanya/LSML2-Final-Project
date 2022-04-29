@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image captioning</title>
+    <link rel="stylesheet" href="./semantic.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/semantic.css') }}">
+</head>
+<body>
+    <div class="ui main container">
+        <h1>Generating image caption</h1>
+        <p>This application is an implementation of network described in <a href="https://ai.googleblog.com/2014/11/a-picture-is-worth-thousand-coherent.html">this article.</a></br>
+        <form class="ui form" action="/predict" method="post" enctype="multipart/form-data">
+            <div class="field">
+                <label>Select image</label>
+                <input type="file" name="image">
+            </div>
+            <button class="ui primary button" type="submit">Generate caption</button>
+        </form>
+    </div>
+</body>
+</html>

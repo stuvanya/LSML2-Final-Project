@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image captioning result</title>
+    <link rel="stylesheet" href="./semantic.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/semantic.css') }}">
+</head>
+<body>
+    <div class="ui main container">
+        <h1>Image captioning result</h1>
+        <p> {% for el in output %}
+                {{el}} </br>
+            {% endfor %}
+        </p>
+        <img src="/static/images/img.png" width="299" title="example">
+        </br>
+        </br>
+        <a href="/">
+            <button class="ui primary button" type="submit">Back</button>
+        </a>
+    </div>
+</body>
+</html>

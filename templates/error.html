@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image captioning result</title>
+    <link rel="stylesheet" href="./semantic.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/semantic.css') }}">
+</head>
+<body>
+    <div class="ui main container">
+        <h1>Some error occured!</h1>
+        <p> 
+            {{error}}
+        </p>
+        </br>
+        <a href="/">
+            <button class="ui primary button" type="submit">Back</button>
+        </a>
+    </div>
+</body>
+</html>
